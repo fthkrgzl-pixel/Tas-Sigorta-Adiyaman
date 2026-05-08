@@ -1,0 +1,19 @@
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Antigravity/AI files
+.gemini/
+knowledge/
+brain/
+artifacts/
+implementation_plan.md
+task.md
+walkthrough.md
+scratch/

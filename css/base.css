@@ -1,0 +1,62 @@
+/* 
+    BASE MODULE: Reset & Typography
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #0A192F;
+}
+
+.theme-wrapper {
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    min-height: 100vh;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-premium);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--ff-heading);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--clr-navy);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--clr-blue), var(--clr-amber));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Sigorta | Modern Otorite</title>
+    <meta name="description" content="Taş Sigorta - Güven, sarsılmazlık ve dijital kolaylık ile sigorta çözümleri.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Theme Toggle Hack -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+    
+    <div class="theme-wrapper">
+        <!-- Checkbox Hack for Mobile Menu -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-text">TAŞ<span>SİGORTA</span></span>
+                </div>
+
+                <div class="header-right">
+                    <!-- Theme Toggle Switch -->
+                    <label for="theme-toggle" class="theme-switch" title="Temayı Değiştir">
+                        <span class="switch-icon sun">☀️</span>
+                        <span class="switch-icon moon">🌙</span>
+                    </label>
+
+                    <div class="header-contact">
+                        <span class="contact-label">Yardımcı Olmaya Hazırız</span>
+                        <a href="tel:+905325211247" class="contact-phone">0532 521 12 47</a>
+                    </div>
+                    
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span></span>
+                    </label>
+
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                            <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                            <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                            <li><a href="#contact" class="nav-link nav-btn">Teklif Al</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <!-- Content will be added in Phase 3 -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="trust-badge">
+                            <span class="badge-icon">🛡️</span> +15 Yıllık Deneyim
+                        </div>
+                        <h1>Geleceğinizi <br><span class="text-gradient">Sarsılmaz</span> Temeller Üzerine İnşa Edin.</h1>
+                        <p>Modern teknoloji ve köklü güven anlayışıyla, Taş Sigorta yanınızda.</p>
+                        <div class="hero-actions">
+                            <a href="#services" class="btn btn-secondary">Hizmetlerimizi Gör</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-form-container">
+                        <form class="offer-form">
+                            <h2 class="form-title">30 Saniyede Teklif Al</h2>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>TC Kimlik No</label>
+                                    <input type="text" placeholder="XXXXXXXXXXX" maxlength="11" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Plaka</label>
+                                    <input type="text" placeholder="01 ABC 01" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Belge Seri No</label>
+                                    <input type="text" placeholder="ABC123456" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefon</label>
+                                    <input type="tel" placeholder="05XX XXX XX XX" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Hemen Teklif Al</button>
+                            <p class="form-footer">Verileriniz KVKK kapsamında güvence altındadır.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Services Section with Tabs -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hizmetlerimiz</h2>
+                    <p class="section-subtitle">Geniş kapsamlı sigorta çözümlerimizle her adımda güvendesiniz.</p>
+                </div>
+
+                <!-- Tabs Radio Hack -->
+                <div class="tabs">
+                    <input type="radio" name="service-tabs" id="tab-1" checked>
+                    <input type="radio" name="service-tabs" id="tab-2">
+                    <input type="radio" name="service-tabs" id="tab-3">
+
+                    <div class="tab-controls">
+                        <label for="tab-1" class="tab-label">Bireysel</label>
+                        <label for="tab-2" class="tab-label">Kurumsal</label>
+                        <label for="tab-3" class="tab-label">Özel Çözümler</label>
+                    </div>
+
+                <div class="tab-content-wrapper">
+                    <div class="tab-content content-1">
+                        <div class="grid services-grid">
+                            <article class="service-card">
+                                <div class="service-icon">🚗</div>
+                                <h3>Trafik</h3>
+                                <p>Zorunlu trafik sigortası ile yolların güvencesi.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🚘</div>
+                                <h3>Kasko</h3>
+                                <p>Aracınız için en geniş kapsamlı koruma paketi.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🏠</div>
+                                <h3>DASK & Konut</h3>
+                                <p>Evinizi ve geleceğinizi teminat altına alın.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🏥</div>
+                                <h3>Tamamlayıcı Sağlık</h3>
+                                <p>SGK'ya ek en iyi hastanelerde fark ödemeden tedavi.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">✈️</div>
+                                <h3>Seyahat Sağlık</h3>
+                                <p>Yurt dışı ve yurt içi seyahatlerinizde tam güvence.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🏢</div>
+                                <h3>İş Yeri</h3>
+                                <p>Ticari varlıklarınızı her türlü riske karşı koruyun.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tab-content content-2">
+                        <div class="grid services-grid">
+                            <article class="service-card">
+                                <div class="service-icon">🚛</div>
+                                <h3>Yol Yardım</h3>
+                                <p>Yolda kaldığınız her an profesyonel çekici desteği.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">❤️</div>
+                                <h3>Özel Sağlık</h3>
+                                <p>Size özel en kapsamlı sağlık çözümleri.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">💰</div>
+                                <h3>Bireysel Emeklilik</h3>
+                                <p>Geleceğiniz için bugünden biriktirmeye başlayın.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tab-content content-3">
+                        <div class="grid services-grid">
+                            <article class="service-card">
+                                <div class="service-icon">🌾</div>
+                                <h3>TARSİM</h3>
+                                <p>Tarım ve hayvancılık emeklerinizi koruyan devlet destekli sigorta.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🐾</div>
+                                <h3>Evcil Hayvan</h3>
+                                <p>Sadık dostlarınızın sağlık harcamaları artık dert değil.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-icon">🛡️</div>
+                                <h3>Ferdi Kaza</h3>
+                                <p>Beklenmedik kazalara karşı sevdiklerinizi koruyun.</p>
+                                <a href="#" class="service-link">Detayları Gör →</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="tab-dots">
+                    <label for="tab-1" class="dot dot-1"></label>
+                    <label for="tab-2" class="dot dot-2"></label>
+                    <label for="tab-3" class="dot dot-3"></label>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (Accordion Hack) -->
+        <section id="faq" class="faq section">
+            <div class="container">
+                <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <input type="checkbox" id="faq-1">
+                        <label for="faq-1" class="accordion-header">Neden Taş Sigorta'yı tercih etmeliyim?</label>
+                        <div class="accordion-content">
+                            <p>Adıyaman merkezli köklü tecrübemiz ve modern dijital altyapımızla, hasar anında en hızlı desteği biz sağlıyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="checkbox" id="faq-2">
+                        <label for="faq-2" class="accordion-header">Teklif alma süreci ne kadar sürer?</label>
+                        <div class="accordion-content">
+                            <p>Dijital formumuz sayesinde sadece birkaç dakika içinde en uygun teklifleri görebilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Bize Ulaşın</h2>
+                        <p>Sorularınız için uzman ekibimiz her zaman hazır.</p>
+                        <div class="info-item">
+                            <a href="https://www.google.com/maps/search/Adıyaman+Sigorta+Acentesi" target="_blank" rel="noopener">
+                                <span class="icon">📍</span> Adıyaman, Türkiye
+                            </a>
+                        </div>
+                        <div class="info-item">
+                            <a href="tel:+905000000000">
+                                <span class="icon">📞</span> +90 (500) 000 00 00
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Adınız Soyadınız</label>
+                            <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-posta Adresiniz</label>
+                            <input type="email" placeholder="ahmet@email.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Teklif Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text">TAŞ<span>SİGORTA</span></span>
+                    <p>Güvenin ve istikrarın adresi.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Hizmetler</a></li>
+                        <li><a href="#">Hasar Sorgulama</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/tassigorta" target="_blank" class="social-link">Facebook</a>
+                        <a href="https://instagram.com/tassigorta" target="_blank" class="social-link">Instagram</a>
+                        <a href="https://twitter.com/tassigorta" target="_blank" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taş Sigorta Adıyaman. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button (JS-Free) -->
+    <a href="https://wa.me/905325211247" class="whatsapp-float" target="_blank" rel="noopener">
+        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-text">WhatsApp</span>
+    </a>
+    </div> <!-- End .theme-wrapper -->
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* 
+    COMPONENTS MODULE: Buttons, Cards, Tabs, Forms, Accordions
+*/
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-premium);
+}
+
+.btn-primary {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-blue-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    border: 1px solid var(--clr-blue);
+    color: var(--clr-blue);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 123, 255, 0.05);
+}
+
+/* Service Cards */
+.grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+    background: var(--clr-surface);
+    padding: var(--space-md);
+    border-radius: 12px;
+    border: 1px solid var(--clr-border);
+    transition: var(--transition-premium);
+    box-shadow: var(--shadow-sm);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--clr-blue);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-sm);
+}
+
+/* Tabs */
+.tabs input {
+    display: none;
+}
+
+.tab-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--clr-border);
+    padding-bottom: var(--space-sm);
+}
+
+.tab-label {
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--clr-gray-400);
+    transition: var(--transition-premium);
+    position: relative;
+}
+
+.tab-label:hover {
+    color: var(--clr-blue);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#tab-1:checked ~ .tab-content-wrapper .content-1,
+#tab-2:checked ~ .tab-content-wrapper .content-2,
+#tab-3:checked ~ .tab-content-wrapper .content-3 {
+    display: block;
+}
+
+/* Pagination Dots Styling */
+.tab-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: var(--space-md);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--clr-gray-200);
+    cursor: pointer;
+    transition: var(--transition-premium);
+    border: 2px solid transparent;
+}
+
+.dot:hover {
+    background: var(--clr-blue);
+    transform: scale(1.2);
+}
+
+#tab-1:checked ~ .tab-dots .dot-1,
+#tab-2:checked ~ .tab-dots .dot-2,
+#tab-3:checked ~ .tab-dots .dot-3 {
+    background: var(--clr-blue);
+    width: 24px;
+    border-radius: 10px;
+}
+
+/* Forms */
+.offer-form {
+    background: var(--clr-surface);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--clr-border);
+    padding: var(--space-md);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+}
+
+@media (max-width: 480px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.offer-form input {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--clr-white);
+    border: 1px solid var(--clr-gray-200);
+    color: var(--clr-navy);
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.offer-form input:focus {
+    border-color: var(--clr-blue);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+.form-footer {
+    font-size: 0.75rem;
+    color: var(--clr-text-muted);
+    text-align: center;
+    margin-top: var(--space-sm);
+}
+
+.form-group {
+    margin-bottom: var(--space-sm);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--clr-text-muted);
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    margin-bottom: var(--space-sm);
+    border: 1px solid var(--clr-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item input { display: none; }
+
+.accordion-header {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--clr-surface);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.accordion-header:hover { background: var(--clr-gray-100); }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--clr-bg);
+    transition: var(--transition-premium);
+}
+
+.accordion-item input:checked ~ .accordion-content {
+    max-height: 500px;
+    padding: var(--space-md);
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    background-color: #25D366;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    font-weight: 700;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #128C7E;
+}
