@@ -169,15 +169,83 @@
     padding: 0.8rem;
     background: var(--clr-white);
     border: 1px solid var(--clr-gray-200);
-    color: var(--clr-navy);
+    color: #0A192F; /* Always dark on white background */
     border-radius: 6px;
     font-size: 0.9rem;
 }
 
-.offer-form input:focus {
+.offer-form input:focus,
+.form-select:focus {
     border-color: var(--clr-blue);
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
     outline: none;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--clr-white);
+    border: 1px solid var(--clr-gray-200);
+    color: #0A192F; /* Always dark on white background */
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Multi-Type Form Logic */
+.form-type-selector input[type="radio"] {
+    display: none;
+}
+
+.type-controls {
+    display: flex;
+    gap: 5px;
+    margin-bottom: var(--space-md);
+    background: var(--clr-gray-100);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.type-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.6rem 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: var(--transition-premium);
+    color: var(--clr-text-muted);
+}
+
+#type-car:checked ~ .type-controls label[for="type-car"],
+#type-dask:checked ~ .type-controls label[for="type-dask"],
+#type-health:checked ~ .type-controls label[for="type-health"],
+#type-farm:checked ~ .type-controls label[for="type-farm"] {
+    background: var(--clr-blue);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-step {
+    display: none;
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#type-car:checked ~ .dynamic-form .car-fields,
+#type-dask:checked ~ .dynamic-form .dask-fields,
+#type-health:checked ~ .dynamic-form .health-fields,
+#type-farm:checked ~ .dynamic-form .farm-fields {
+    display: block;
+}
+
+.full-width {
+    grid-column: span 2;
 }
 
 .form-footer {

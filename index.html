@@ -74,34 +74,131 @@
                     </div>
                     
                     <div class="hero-form-container">
-                        <form class="offer-form">
+                        <div class="offer-form">
                             <h2 class="form-title">30 Saniyede Teklif Al</h2>
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label>TC Kimlik No</label>
-                                    <input type="text" placeholder="XXXXXXXXXXX" maxlength="11" required>
+                            
+                            <!-- Form Type Selector -->
+                            <div class="form-type-selector">
+                                <input type="radio" name="form-type" id="type-car" checked>
+                                <input type="radio" name="form-type" id="type-dask">
+                                <input type="radio" name="form-type" id="type-health">
+                                <input type="radio" name="form-type" id="type-farm">
+
+                                <div class="type-controls">
+                                    <label for="type-car" class="type-btn">🚗 Araç</label>
+                                    <label for="type-dask" class="type-btn">🏠 DASK</label>
+                                    <label for="type-health" class="type-btn">❤️ Sağlık</label>
+                                    <label for="type-farm" class="type-btn">🌾 Tarım</label>
                                 </div>
-                                <div class="form-group">
-                                    <label>Plaka</label>
-                                    <input type="text" placeholder="01 ABC 01" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Belge Seri No</label>
-                                    <input type="text" placeholder="ABC123456" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Telefon</label>
-                                    <input type="tel" placeholder="05XX XXX XX XX" required>
-                                </div>
+
+                                <form class="dynamic-form">
+                                    <!-- Common Field: TC -->
+                                    <div class="form-group full-width">
+                                        <label>TC Kimlik No</label>
+                                        <input type="text" placeholder="XXXXXXXXXXX" maxlength="11" required>
+                                    </div>
+
+                                    <!-- CAR FIELDS -->
+                                    <div class="form-step car-fields">
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label>Plaka</label>
+                                                <input type="text" placeholder="01 ABC 01">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Belge Seri No</label>
+                                                <input type="text" placeholder="ABC123456">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- DASK FIELDS -->
+                                    <div class="form-step dask-fields">
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label>İl / İlçe</label>
+                                                <input type="text" placeholder="Adıyaman / Merkez">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Bina Yılı</label>
+                                                <input type="number" placeholder="2000">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- HEALTH FIELDS -->
+                                    <div class="form-step health-fields">
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label>Doğum Tarihi</label>
+                                                <input type="date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Cinsiyet</label>
+                                                <select class="form-select">
+                                                    <option>Seçiniz</option>
+                                                    <option>Erkek</option>
+                                                    <option>Kadın</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- FARM FIELDS -->
+                                    <div class="form-step farm-fields">
+                                        <div class="form-grid">
+                                            <div class="form-group">
+                                                <label>Ürün Tipi</label>
+                                                <input type="text" placeholder="Buğday, Pamuk vb.">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Parsel / Dönüm</label>
+                                                <input type="text" placeholder="123 / 50">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Common Field: Phone & Submit -->
+                                    <div class="form-group full-width">
+                                        <label>Telefon</label>
+                                        <input type="tel" placeholder="05XX XXX XX XX" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-full">Hemen Teklif Al</button>
+                                    <p class="form-footer">Verileriniz KVKK kapsamında güvence altındadır.</p>
+                                </form>
                             </div>
-                            <button type="submit" class="btn btn-primary w-full">Hemen Teklif Al</button>
-                            <p class="form-footer">Verileriniz KVKK kapsamında güvence altındadır.</p>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+        <!-- Partners / Anlaşmalı Kurumlar -->
+        <section class="partners-bar">
+            <div class="container">
+                <div class="partners-wrapper">
+                    <span class="partners-label">Anlaşmalı Kurumlarımız</span>
+                    <div class="marquee-container">
+                        <div class="partners-track">
+                            <a href="#" class="partner-item" target="_blank"><span>GLOBAL</span> SİGORTA</a>
+                            <a href="#" class="partner-item" target="_blank"><span>YILDIZ</span> ASİSTANS</a>
+                            <a href="#" class="partner-item" target="_blank"><span>GÜVEN</span> KASKO</a>
+                            <a href="#" class="partner-item" target="_blank"><span>ANADOLU</span> GÜCÜ</a>
+                            <a href="#" class="partner-item" target="_blank"><span>MAVİ</span> KALKAN</a>
+                            <a href="#" class="partner-item" target="_blank"><span>ZİRVE</span> HAYAT</a>
+                            <!-- Loop duplicates -->
+                            <a href="#" class="partner-item" target="_blank"><span>GLOBAL</span> SİGORTA</a>
+                            <a href="#" class="partner-item" target="_blank"><span>YILDIZ</span> ASİSTANS</a>
+                            <a href="#" class="partner-item" target="_blank"><span>GÜVEN</span> KASKO</a>
+                            <a href="#" class="partner-item" target="_blank"><span>ANADOLU</span> GÜCÜ</a>
+                            <a href="#" class="partner-item" target="_blank"><span>MAVİ</span> KALKAN</a>
+                            <a href="#" class="partner-item" target="_blank"><span>ZİRVE</span> HAYAT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Services Section with Tabs -->
         <section id="services" class="services section">
@@ -243,6 +340,56 @@
             </div>
         </section>
 
+        <!-- Office Gallery Section -->
+        <section class="office-gallery section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Ofisimizden Kareler</h2>
+                    <p class="section-subtitle">Sizleri ağırlamaktan mutluluk duyacağımız modern ofisimiz.</p>
+                </div>
+                <div class="office-slider-container">
+                    <input type="radio" name="office-slide" id="os-1" checked>
+                    <input type="radio" name="office-slide" id="os-2">
+                    <input type="radio" name="office-slide" id="os-3">
+
+                    <div class="office-slides">
+                        <div class="office-slide item-1">
+                            <img src="tas_sigorta_ofis_placeholder_1778420925834.png" alt="Taş Sigorta Ofis Dış Görünüm">
+                        </div>
+                        <div class="office-slide item-2">
+                            <img src="tas_sigorta_ofis_ic_mekan_1778421320644.png" alt="Taş Sigorta Ofis İç Mekan">
+                        </div>
+                        <div class="office-slide item-3">
+                            <img src="tas_sigorta_ofis_detay_1778421398777.png" alt="Taş Sigorta Ofis Detay">
+                        </div>
+                    </div>
+
+                    <!-- Arrow Controls -->
+                    <div class="slider-arrows">
+                        <div class="arrow-group group-1">
+                            <label for="os-3" class="prev">❮</label>
+                            <label for="os-2" class="next">❯</label>
+                        </div>
+                        <div class="arrow-group group-2">
+                            <label for="os-1" class="prev">❮</label>
+                            <label for="os-3" class="next">❯</label>
+                        </div>
+                        <div class="arrow-group group-3">
+                            <label for="os-2" class="prev">❮</label>
+                            <label for="os-1" class="next">❯</label>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Dots -->
+                    <div class="slider-dots">
+                        <label for="os-1" class="s-dot dot-1"></label>
+                        <label for="os-2" class="s-dot dot-2"></label>
+                        <label for="os-3" class="s-dot dot-3"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact section">
             <div class="container">
@@ -262,15 +409,25 @@
                         </div>
                     </div>
                     <form class="contact-form">
-                        <div class="form-group">
-                            <label>Adınız Soyadınız</label>
-                            <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Adınız Soyadınız</label>
+                                <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
+                            </div>
+                            <div class="form-group">
+                                <label>E-posta Adresiniz</label>
+                                <input type="email" placeholder="ahmet@email.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>E-posta Adresiniz</label>
-                            <input type="email" placeholder="ahmet@email.com" required>
+                            <label>Telefon Numaranız</label>
+                            <input type="tel" placeholder="05XX XXX XX XX" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-full">Teklif Gönder</button>
+                        <div class="form-group">
+                            <label>Notunuz / Mesajınız</label>
+                            <textarea placeholder="Size nasıl yardımcı olabiliriz?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Mesajı Gönder</button>
                     </form>
                 </div>
             </div>
